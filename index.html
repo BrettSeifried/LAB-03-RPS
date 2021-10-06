@@ -18,8 +18,9 @@
     </header>
     <main>
         <p>Wins:<span id="wins">0</span></p> 
-    
         <p>Losses:<span id="losses">0</span></p>
+        <p>Draws:<span id="draws">0</span></p>
+    
     </main>
     <section>
         <label>
@@ -34,7 +35,9 @@
             <input type="radio" name="choice" id="scissor" value="scissorValue">
             <img src="./assets/scissors.jpg" alt="Edward Scissor Hands">
         </label>
-
+    <button id="submit">Fight!</button>
+    <p id="error" class="hidden">You Didn't pick a tool!</p>
+    <p id="result"></p>
     </section>
     <script type="module" src="./app.js"></script>
 </body>

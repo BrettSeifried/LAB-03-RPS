@@ -10,3 +10,13 @@ img {
     max-width: 200px;
     max-height: 200px;
 }
+
+.hidden {
+    display: none;
+}
+
+input[type=radio]:checked + img {
+    border: 5px solid yellow;
+    filter: grayscale(0%);
+    border-radius: 5px;
+}
