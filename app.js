@@ -27,9 +27,7 @@ button.addEventListener('click', () => {
     error.classList.add('hidden');
     const userChoice = selected.value;
     const compChoice = getRandomThrow();
-    console.log(compChoice);
-    console.log(userChoice);
-
+    
     if (userChoice === compChoice){
         draw++;
     } else if (didUserWin(userChoice, compChoice)){
@@ -40,5 +38,5 @@ button.addEventListener('click', () => {
 
     winSpan.textContent = win;
     lossSpan.textContent = loss;
-    drawSpan.textcontent = draw;
+    drawSpan.textContent = draw;
 });
