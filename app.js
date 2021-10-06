@@ -6,6 +6,7 @@ const winSpan = document.getElementById('wins');
 const lossSpan = document.getElementById('losses');
 const drawSpan = document.getElementById('draws');
 const error = document.getElementById('error');
+const refresh = document.getElementById('refresh');
 // initialize global state
 
 let win = 0;
@@ -39,4 +40,13 @@ button.addEventListener('click', () => {
     winSpan.textContent = win;
     lossSpan.textContent = loss;
     drawSpan.textContent = draw;
+});
+
+refresh.addEventListener('click', () => {
+    win = 0;
+    loss = 0;
+    draw = 0;
+    winSpan.textContent = '0';
+    lossSpan.textContent = '0';
+    drawSpan.textContent = '0';
 });
