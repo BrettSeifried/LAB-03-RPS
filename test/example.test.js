@@ -1,5 +1,5 @@
 import { didUserWin } from '../functions.js';
-
+import { getRandomThrow} from '../functions.js';
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
@@ -20,15 +20,13 @@ test('user rock, comp scissor = Win', (expect) => {
 });
 
 test('user paper, comp scissor = Loss', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
     const expected = false;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
     const actual = didUserWin('paper', 'scissor');
-
-    //Expect
-    // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
 });
+
+// test('test getRandomThrow', (expect) => {
+//     const expected = getRandomThrow;
+//     const actual = getRandomThrow;
+//     expect.notequal(actual, expected);
+// });
