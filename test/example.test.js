@@ -1,5 +1,5 @@
 import { didUserWin } from '../functions.js';
-import { getRandomThrow} from '../functions.js';
+// import { getRandomThrow} from '../functions.js';
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
