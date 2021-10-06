@@ -7,11 +7,14 @@ const lossSpan = document.getElementById('losses');
 const drawSpan = document.getElementById('draws');
 const error = document.getElementById('error');
 const refresh = document.getElementById('refresh');
+const restartSpan = document.getElementById('resets');
+
 // initialize global state
 
 let win = 0;
 let loss = 0;
 let draw = 0;
+
 
 // set event listeners 
   // get user input
@@ -42,6 +45,9 @@ button.addEventListener('click', () => {
     drawSpan.textContent = draw;
 });
 
+// Restart Button
+let restart = 0;
+
 refresh.addEventListener('click', () => {
     win = 0;
     loss = 0;
@@ -49,4 +55,7 @@ refresh.addEventListener('click', () => {
     winSpan.textContent = '0';
     lossSpan.textContent = '0';
     drawSpan.textContent = '0';
+    restart++;
+    restartSpan.textContent = restart;
 });
+

@@ -5,7 +5,7 @@ import { didUserWin } from '../functions.js';
 
 const test = QUnit.test;
 
-test('user rock, comp scissor', (expect) => {
+test('user rock, comp scissor = Win', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = true;
@@ -19,7 +19,7 @@ test('user rock, comp scissor', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('user paper, comp scissor', (expect) => {
+test('user paper, comp scissor = Loss', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = false;
