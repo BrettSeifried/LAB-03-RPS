@@ -1,5 +1,5 @@
-import { didUserWin } from './functions.js';
 import { getRandomThrow } from './functions.js';
+import { didUserWin } from './functions.js';
 // import functions and grab DOM elements
 const button = document.getElementById('submit');
 const winSpan = document.getElementById('wins');
@@ -18,25 +18,26 @@ let draw = 0;
   // update DOM to reflect the new state
 
 button.addEventListener('click', () => {
-    const select = document.querySelector('input[type=radio]:checked');
+    const selected = document.querySelector('input[type=radio]:checked');
 
-
-    if (!select){
+    if (!selected){
         return error.classList.remove('hidden');
     }
 
     error.classList.add('hidden');
-    const userChoice = select.value;
+    const userChoice = selected.value;
     const compChoice = getRandomThrow();
     console.log(compChoice);
+    console.log(userChoice);
 
-    if (didUserWin(userChoice, compChoice)){
-        win++;
-    } else if {
-        loss++;
-    } else {
+    if (userChoice === compChoice){
         draw++;
+    } else if (didUserWin(userChoice, compChoice)){
+        win++;
+    } else {
+        loss++;
     }
+
     winSpan.textContent = win;
     lossSpan.textContent = loss;
     drawSpan.textcontent = draw;
