@@ -57,3 +57,10 @@ input[type=radio]{
     font-size: x-large;
     margin-top: 2px;
 }
+
+button {
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    font-weight: bold;
+    font-size: x-large;
+}
